@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Модель с пощью Flask
+{% endblock %}
+
+{% block body %}
+<div class="main">
+    <div class="col">
+        <h1>Линейная регрессия</h1>
+        <h4>
+            Данная модель предсказывает приблизительное время поездки <br> на такси основываясь на то какой сейчас день и час.
+        </h4>
+    </div>
+    <div class="col">
+        <form action="" method="post">
+            <p>
+                <label>День</label>
+                <input type="date" style="margin-left: 7px" name="date">
+            </p>
+            <p>
+                <label>Время</label>
+                <input type="time" name="time">
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+        </form>
+        {% if message %}
+            <p>Примерное время: {{ message }} мин.</p>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}
+

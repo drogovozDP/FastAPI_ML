@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Oswald';
+}
+
+.main {
+    padding: 15px;
+}
+
+.row {
+
+}
+
+.col {
+    display: inline-block;
+    vertical-align: top
+}
